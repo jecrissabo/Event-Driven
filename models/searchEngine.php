@@ -13,6 +13,9 @@
             <tr>
                 <td style="text-align: center;"><?=$row['Zip_code'] ?></td>
                 <td><?= $row['Municipality_name'] ?></td>
+                <td class="d-grid">
+                <button type="button" class="btn btn-sm btn-block btn-success" data-bs-toggle="modal" data-bs-target="#view-details">view</button>
+                </td>
             </tr>
             <?php
         }
