@@ -30,10 +30,10 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Dashboard</a>
+                        <a class="nav-link" href="./index.php">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/myshop/registration.php">Registration</a>
+                        <a class="nav-link" href="./registration.php">Registration</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -53,8 +53,10 @@
                 <table class="table table-bordered table-hover">
                     <thead>
                         <tr>
-                            <th width="150" style="text-align: center;">Zip code</th>
-                            <th style="text-align: left; padding-left: 10px">Municipality Name</th>
+                            <th width="150" style="text-align: center;">ID</th>
+                            <th style="text-align: left; padding-left: 10px">Zip Code</th>
+                            <th style="text-align: left; padding-left: 10px">Last Name</th>
+                            <th style="text-align: left; padding-left: 10px">Municipality</th>
                             <th width="50" style="text-align: center;">Action</th>
                         </tr>
                     </thead>
