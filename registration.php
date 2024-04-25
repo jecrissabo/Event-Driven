@@ -48,14 +48,16 @@
                 <div class="card-header">Registration form</div>
                 <div class="card-body">
                     <?php
-                    if (isset($_GET{'success'})) {
+                    if (isset($_GET{
+                    'success'})) {
                     ?>
                         <div class="alert alert-success">
                             <b>You are Registered</b>. Congrat. Thank you.
                         </div>
                         <hr>
                     <?php
-                    } elseif (isset($_GET{'invalid'})) {
+                    } elseif (isset($_GET{
+                    'invalid'})) {
                     ?>
                         <div class="alert alert-danger">
                             <b>Existed Application ID</b>. Please try another. Thank you.
@@ -65,7 +67,7 @@
                     }
                     ?>
 
-                  <!--  <div class="row">
+                    <!--  <div class="row">
                         <div class="col-md-4">
                             <label> Application ID : <b class="text-danger">*</b> </label><br>
                             <input name="inp_appid" type="text" placeholder="Enter application id here" class="form control mt-2">
@@ -129,6 +131,30 @@
                                     <option value="single">single</option>
                                     <option value="married">married</option>
 
+                                </select>
+                            </div>
+
+                            <?php
+                            include('../config/database.php');
+                            ?>
+                            <?php
+                                    $sql = "SELECT * FROM ph_region";
+                                    $result = $conn->query($sql);
+        
+                                    if ($result->num_rows > 0) {
+                                        while ($row = $result->fetch_assoc()) {
+                                            echo $row['regDesc'] . "<br>";
+                                        }
+                                    } else {
+                                        echo "0 results";
+                                    }
+                                    $conn->close();
+                                    ?>
+                            <div class="col-md-3 mt-3">
+                                <label>Regoin : <small>(Optional)</small></label><br>
+                                <select name="inp_regoin" type="text" class="form control mt-3">
+                                    <option value="" disabled selected>--SELECT REGOIN--</option>
+                            
                                 </select>
                             </div>
                         </div>
