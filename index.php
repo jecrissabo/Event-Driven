@@ -54,9 +54,7 @@
                     <thead>
                         <tr>
                             <th width="150" style="text-align: center;">ID</th>
-                            <th style="text-align: left; padding-left: 10px">Zip Code</th>
                             <th style="text-align: left; padding-left: 10px">Last Name</th>
-                            <th style="text-align: left; padding-left: 10px">Municipality</th>
                             <th width="50" style="text-align: center;">Action</th>
                         </tr>
                     </thead>

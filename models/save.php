@@ -9,7 +9,6 @@ $registration = array(
     'Gender' =>"'". $_POST['inp_gender']."'",
     'Birth_date' =>"'". $_POST['inp_birthdate']."'",
    'Birth_place' =>"'". $_POST['inp_birthplace']."'",
-    'Zip_code' =>"'". $_POST['inp_zcode']."'",
    'Status' =>"'". $_POST['inp_status']."'",
 );
 

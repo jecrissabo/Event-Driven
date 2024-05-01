@@ -48,16 +48,16 @@
                 <div class="card-header">Registration form</div>
                 <div class="card-body">
                     <?php
-                    if (isset($_GET{
-                    'success'})) {
+                    if (isset($_GET[
+                    'success'])) {
                     ?>
                         <div class="alert alert-success">
                             <b>You are Registered</b>. Congrat. Thank you.
                         </div>
                         <hr>
                     <?php
-                    } elseif (isset($_GET{
-                    'invalid'})) {
+                    } elseif (isset($_GET[
+                    'invalid'])) {
                     ?>
                         <div class="alert alert-danger">
                             <b>Existed Application ID</b>. Please try another. Thank you.
@@ -97,7 +97,7 @@
                         </div>
                         
                         
-                            <div class="col-md-2 mt-4">
+                            <div class="col-md-3 mt-4">
                                 <label>Gender : <b class="text-danger">*</b></label><br>
                                 <select name="inp_gender" required class="form-control mt-3">
                                     <option value="" disabled selected>--SELECT GENDER--</option>
@@ -105,7 +105,7 @@
                                     <option value="Female">Female</option>
                                 </select>
                             </div>
-                            <div class="col-md-2 mt-4">
+                            <div class="col-md-3 mt-4">
                                 <label>Birth Date : <b class="text-danger">*</b></label><br>
                                 <input name="inp_birthdate" type="date" placeholder="mm/dd/yy" class="form-control mt-3">
                             </div>
@@ -113,11 +113,6 @@
                                 <label>Birth place : <b class="text-danger">*</b></label><br>
                                 <input name="inp_birthplace" type="text" placeholder="birth place name here" class="form-control mt-3">
                             </div>
-                            <div class="col-md-2 mt-4">
-                                <label>Zip code : <b class="text-danger">*</b></label><br>
-                                <input name="inp_zcode" type="text" placeholder="type your zipcode" class="form-control mt-3">
-                            </div>
-                            
                             <div class="col-md-3 mt-4">
                                 <label>Status : <small>(Optional)</small></label><br>
                                 <select name="inp_status" type="text" class="form-control mt-3">
